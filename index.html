@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>吴予泽的简历网站</title>
+  <title>吴予泽 - 大数据工程师 简历</title>
   <style>
     :root {
       --page-bg: #f5f8fc;
@@ -97,9 +97,19 @@
       margin: 5px 0;
     }
 
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(23, 74, 124, 0.35);
+    }
+
+    a:hover {
+      border-bottom-color: var(--accent);
+    }
+
     .info-list {
       display: grid;
-      grid-template-columns: minmax(320px, 1.6fr) minmax(150px, 0.75fr) minmax(220px, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 8px 18px;
       margin: 0;
       padding: 12px 14px;
@@ -111,7 +121,6 @@
     .info-list li {
       margin: 0;
       color: #24364a;
-      white-space: nowrap;
     }
 
     .experience-intro {
@@ -142,10 +151,6 @@
       .info-list {
         grid-template-columns: 1fr;
       }
-
-      .info-list li {
-        white-space: normal;
-      }
     }
 
     @media print {
@@ -161,6 +166,11 @@
         padding: 0;
         border: 0;
         box-shadow: none;
+      }
+
+      a {
+        color: var(--ink);
+        border-bottom: 0;
       }
 
       section,
@@ -179,73 +189,71 @@
 <body>
   <main class="resume">
     <header>
-      <h1>吴予泽</h1>
+      <h1>吴予泽（Casper）</h1>
     </header>
 
     <section aria-labelledby="personal-info">
       <h2 id="personal-info">个人信息</h2>
       <ul class="info-list">
-        <li>目标岗位：数据工程师 / 数据治理 / BI开发</li>
-        <li>手机号：15959236010</li>
+        <li>目标岗位：大数据工程师 / 数据开发</li>
+        <li>电话：15959236010</li>
         <li>邮箱：zevantwerp@foxmail.com</li>
+        <li>GitHub：<a href="https://github.com/casperfrome">github.com/casperfrome</a></li>
+        <li>简历站点：<a href="https://casperfrome.github.io">casperfrome.github.io</a></li>
       </ul>
     </section>
 
     <section aria-labelledby="strengths">
       <h2 id="strengths">个人优势</h2>
       <ul>
-        <li>具备企业数据仓库、BI看板与数据治理项目经验，熟悉基于 DataWorks 的数仓开发、ETL链路建设、SQL取数分析与 QuickBI 可视化交付。</li>
-        <li>参与多业务域指标梳理、异常监控、口径统一和跨系统数据一致性治理，能够将业务部门需求转化为数据模型、质量规则和可落地的BI分析方案。</li>
-        <li>对制造型企业关注的质量管控、经营分析、数据资产沉淀和合规安全有较强适配意愿，可将现有审计风控、运营稽核、门店状态标准化经验迁移到企业级数据全生命周期管理场景。</li>
+        <li><strong>数仓全链路实战定位</strong>：连锁餐饮行业全链路离线数仓 + 指标体系 + BI + 数据治理实战；统计学本科出身，对业务指标与口径敏感，擅长把业务语言翻译成数据模型。</li>
+        <li><strong>端到端数据开发能力</strong>：精通 SQL，熟练基于阿里云 DataWorks + MaxCompute 做全链路数仓开发（分层建模、ETL 调度与依赖管理、异常监控），具备「业务需求 → 指标建模 → ETL 落地 → 看板交付」的端到端交付能力。</li>
+        <li><strong>业务场景契合</strong>：在门店、运营、稽核、风控等多业务域沉淀了数据治理与指标体系经验，与字节电商 / 生活服务等以「门店·运营·交易」为核心的数据场景天然契合；并通过自建实时数仓平台主动学习 Flink / Kafka 实时链路（自驱学习，非生产经验）。</li>
       </ul>
     </section>
 
     <section aria-labelledby="work">
       <h2 id="work">工作经历</h2>
       <h3>福州塔斯汀餐饮管理有限公司 | 大数据工程师</h3>
-      <ul class="experience-intro">
-        <li>时间：2025.06-至今</li>
-        <li>工作概述：负责公司多业务域数据仓库开发、QuickBI看板搭建与数据治理支持，围绕审计风控、线上运营、建店前业务和门店状态管理等场景，完成数据抽取、清洗、建模、指标口径沉淀、可视化分析与数据质量问题定位。</li>
-        <li>技术与工具：SQL、阿里云 DataWorks、QuickBI、数据仓库、ETL、指标体系、数据质量校验、数据集调优。</li>
+      <p class="meta">2025.06 至今</p>
+      <p class="experience-intro">基于阿里云 DataWorks + MaxCompute 负责全链路离线数仓建设，覆盖审计风控、线上运营、建店前、门店状态等多个业务域，并基于 QuickBI 完成指标体系与 BI 看板交付，参与数据集成切换、数据集调优等数据治理工作。</p>
+      <ul>
+        <li><strong>数据仓库开发</strong>：基于阿里云 DataWorks + MaxCompute 进行全链路离线数仓开发，覆盖数据接入、分层建模、ETL 调度与依赖管理、异常监控。</li>
+        <li><strong>指标体系与 BI</strong>：梳理跨业务域指标口径，基于阿里云 QuickBI 搭建数据集与看板，支撑业务方自助分析。</li>
+        <li><strong>数据治理</strong>：参与数据集成切换、QuickBI 数据集调优等治理项目，提升数据一致性、查询性能与易用性。</li>
       </ul>
 
-      <div class="project">
-        <h4>审计中心风控管理</h4>
-        <ul>
-          <li>梳理审计中心关注的跨业务域风控指标共46个，明确指标定义、统计口径、数据来源和异常判定规则，支撑审计部门从人工核查向指标化、看板化、异常推送化管理转变。</li>
-          <li>基于 DataWorks 完成相关数据链路开发，围绕源表抽取、清洗转换、关联汇总和异常明细沉淀设计数据处理逻辑，提升风控数据的可追溯性和复用性。</li>
-          <li>开发异常推送与 QuickBI 风控看板，支持按业务主题查看异常分布、明细记录和处理进展，为审计中心日常稽核、风险定位和管理复盘提供数据支撑。</li>
-          <li>在指标上线过程中协同业务方反复校验口径差异，定位数据异常来源，推动指标解释、数据质量校验和报表展示逻辑保持一致。</li>
-        </ul>
-      </div>
+      <h4 class="project">审计中心风控管理（指标体系建设 + 异常监控）</h4>
+      <p>面向审计中心，梳理跨多个业务域、总计 46 个风控指标，完成指标口径定义与异常监控流程设计；落地对应的数仓模型开发、异常推送（预警）开发与 BI 看板开发，形成「指标定义 → 数仓加工 → 异常监控 → 推送预警 → 看板呈现」的闭环。</p>
 
-      <div class="project">
-        <h4>线上运营数字化</h4>
-        <ul>
-          <li>面向线上运营部门稽核任务和计件管理需求，拆解业务流程、数据字段和统计口径，搭建线上运营稽核看板与线上运营计件看板。</li>
-          <li>基于稽核任务数据构建完整数据模型，完成 DataWorks 数仓开发、SQL加工逻辑和 QuickBI 数据集配置，支撑运营人员按任务、人员、门店、时间等维度进行追踪分析。</li>
-          <li>通过看板筛选、明细钻取和核心指标展示，提升业务部门对任务完成、异常处理和人员计件情况的自助分析效率。</li>
-          <li>参与 QuickBI 数据集调优，结合查询字段、关联关系和指标使用频率优化数据集结构，改善报表查询与日常使用体验。</li>
-        </ul>
-      </div>
+      <h4 class="project">门店状态修正项目（跨系统数据整合 + 公共维度建设）</h4>
+      <p>整合公司多个业务系统的数据，设计一套完整的门店状态修正逻辑，并拆分为一级 + 二级门店状态，作为公共维度供多个业务域统一复用，保障跨业务域门店口径一致。</p>
 
-      <div class="project">
-        <h4>建店前业务数据建设</h4>
-        <ul>
-          <li>负责建店前业务域相关数仓工作，覆盖招商、选址、工程等环节，将分散业务数据整理为可用于进度跟踪、经营分析和管理报表的数据资产。</li>
-          <li>根据业务部门分析需求梳理核心字段、阶段状态和指标口径，完成数据抽取、清洗、关联和汇总逻辑开发，保障跨部门查看同一业务对象时口径一致。</li>
-          <li>支持建店前业务报表与看板开发，使管理人员能够围绕项目进度、业务节点和异常情况进行集中查看与分析。</li>
-        </ul>
-      </div>
+      <h4 class="project">线上运营数字化（数据建模 + 看板交付）</h4>
+      <p>基于线上运营部门的稽核任务数据，从业务需求抽象出完整数据模型，完成数仓开发与 BI 看板交付，搭建「线上运营稽核看板 + 线上运营计件看板」，支撑运营管理与计件考核。</p>
 
-      <div class="project">
-        <h4>门店状态修正项目</h4>
-        <ul>
-          <li>基于公司多个业务系统的数据，设计门店状态修正逻辑，将门店状态拆分为一级状态与二级状态，解决不同系统、不同业务域对门店状态理解不一致的问题。</li>
-          <li>通过 SQL 规则沉淀和数仓加工链路建设，将修正后的标准状态输出给多个业务域使用，提升门店基础数据的一致性和可复用性。</li>
-          <li>在项目推进中与业务方确认状态定义、边界条件和异常样例，推动门店状态从分散判断转为统一标准，为后续报表、分析和数据治理提供基础资产。</li>
-        </ul>
-      </div>
+      <h4 class="project">建店前业务（业务域全链路数仓）</h4>
+      <p>负责建店前业务域的全部数仓相关工作，覆盖招商、选址、工程等环节的数据建模与加工。</p>
+    </section>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">开源/个人项目</h2>
+      <ul>
+        <li><strong><a href="https://github.com/casperfrome/Casper_real_time_data_warehouse">仿 DataWorks 的数据开发平台</a></strong>：自建实时数仓学习平台（vibe coding 练手 + 实时数仓学习）。</li>
+        <li><strong><a href="https://github.com/casperfrome/maxcompute-query">MaxCompute 自动排查 skill</a></strong>：用于自动化排查 MaxCompute 任务问题。</li>
+        <li><strong><a href="https://github.com/casperfrome/maxcompute-ddl-gen">MaxCompute 建表语句生成 skill</a></strong>：根据数仓 SQL 任务自动生成产出表的 CREATE TABLE 建表语句，逐列追踪字段血缘并反查源表元数据。</li>
+        <li><strong><a href="https://github.com/casperfrome/bitable-to-maxcompute">飞书多维表格采集工具</a></strong>：同时兼容 base + wiki，采集数据同步到 MaxCompute。</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">专业技能</h2>
+      <ul>
+        <li>SQL：精通</li>
+        <li>Python：较为熟练</li>
+        <li>Hadoop、Spark、Flink、Kafka 等大数据组件：了解原理</li>
+        <li>Excel：较为熟练</li>
+      </ul>
     </section>
 
     <section aria-labelledby="education">
@@ -259,7 +267,7 @@
     <section aria-labelledby="internship">
       <h2 id="internship">在校实习经历</h2>
       <ul>
-        <li>北京中数智汇科技股份有限公司 | AI数据产品实习生 | 2024.09-2024.12</li>
+        <li>北京中数智汇科技股份有限公司 | AI 数据产品实习生 | 2024.09-2024.12</li>
         <li>中国平安财产保险有限公司 | 数据分析实习生 | 2025.02-2025.05</li>
       </ul>
     </section>
