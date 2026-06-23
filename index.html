@@ -133,6 +133,11 @@
       border-top: 1px solid var(--line);
     }
 
+    .repo-url {
+      font-size: 13.5px;
+      word-break: break-all;
+    }
+
     @media (max-width: 720px) {
       body {
         font-size: 14px;
@@ -208,7 +213,7 @@
       <ul>
         <li><strong>数仓全链路实战定位</strong>：连锁餐饮行业全链路离线数仓 + 指标体系 + BI + 数据治理实战；统计学本科出身，对业务指标与口径敏感，擅长把业务语言翻译成数据模型。</li>
         <li><strong>端到端数据开发能力</strong>：精通 SQL，熟练基于阿里云 DataWorks + MaxCompute 做全链路数仓开发（分层建模、ETL 调度与依赖管理、异常监控），具备「业务需求 → 指标建模 → ETL 落地 → 看板交付」的端到端交付能力。</li>
-        <li><strong>业务场景契合</strong>：在门店、运营、稽核、风控等多业务域沉淀了数据治理与指标体系经验，与字节电商 / 生活服务等以「门店·运营·交易」为核心的数据场景天然契合；并通过自建实时数仓平台主动学习 Flink / Kafka 实时链路（自驱学习，非生产经验）。</li>
+        <li><strong>业务场景契合</strong>：在门店、运营、稽核、风控等多业务域沉淀了数据治理与指标体系经验，可快速迁移到以门店 / 交易 / 运营为核心的数据场景；并通过自建实时数仓平台主动学习 Flink / Kafka 实时链路（自驱学习，非生产经验）。</li>
       </ul>
     </section>
 
@@ -239,10 +244,10 @@
     <section aria-labelledby="projects">
       <h2 id="projects">开源/个人项目</h2>
       <ul>
-        <li><strong><a href="https://github.com/casperfrome/Casper_real_time_data_warehouse">仿 DataWorks 的数据开发平台</a></strong>：自建实时数仓学习平台（vibe coding 练手 + 实时数仓学习）。</li>
-        <li><strong><a href="https://github.com/casperfrome/maxcompute-query">MaxCompute 自动排查 skill</a></strong>：用于自动化排查 MaxCompute 任务问题。</li>
-        <li><strong><a href="https://github.com/casperfrome/maxcompute-ddl-gen">MaxCompute 建表语句生成 skill</a></strong>：根据数仓 SQL 任务自动生成产出表的 CREATE TABLE 建表语句，逐列追踪字段血缘并反查源表元数据。</li>
-        <li><strong><a href="https://github.com/casperfrome/bitable-to-maxcompute">飞书多维表格采集工具</a></strong>：同时兼容 base + wiki，采集数据同步到 MaxCompute。</li>
+        <li><strong>仿 DataWorks 的数据开发平台</strong>：自建实时数仓学习平台（vibe coding 练手 + 实时数仓学习）。<br><span class="repo-url"><a href="https://github.com/casperfrome/Casper_real_time_data_warehouse">github.com/casperfrome/Casper_real_time_data_warehouse</a></span></li>
+        <li><strong>MaxCompute 自动排查 skill</strong>：用于自动化排查 MaxCompute 任务问题。<br><span class="repo-url"><a href="https://github.com/casperfrome/maxcompute-query">github.com/casperfrome/maxcompute-query</a></span></li>
+        <li><strong>MaxCompute 建表语句生成 skill</strong>：根据数仓 SQL 任务自动生成产出表的 CREATE TABLE 建表语句，逐列追踪字段血缘并反查源表元数据。<br><span class="repo-url"><a href="https://github.com/casperfrome/maxcompute-ddl-gen">github.com/casperfrome/maxcompute-ddl-gen</a></span></li>
+        <li><strong>飞书多维表格采集工具</strong>：同时兼容 base + wiki，采集数据同步到 MaxCompute。<br><span class="repo-url"><a href="https://github.com/casperfrome/bitable-to-maxcompute">github.com/casperfrome/bitable-to-maxcompute</a></span></li>
       </ul>
     </section>
 
